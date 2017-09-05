@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "test",
+  "author": "Bjarssus White (https://www.bjarssus.cc) <bjarssus@foxmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@bjarssus.cc:repo/test.git"
+  },
+  "scripts": {
+      "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
