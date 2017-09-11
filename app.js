@@ -1,13 +1,15 @@
 "use strict";
 
-var express = require("express");
-var bodyParser = require('body-parser');
-var app = express();
+const express = require("express");
+const bodyParser = require("body-parser");
+const config = require("./config.json");
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
 app.use(express.static("www"));
 
 app.post("/post", function(req, res, next) {
@@ -22,7 +24,7 @@ app.post("/post", function(req, res, next) {
     });
 })
 
-var server = app.listen(80, function() {
+var server = app.listen(config.port || 8080, function() {
     var host = server.address().address;
     var port = server.address().port;
 
