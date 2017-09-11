@@ -9,9 +9,10 @@
     "url": "git@bjarssus.cc:repo/test.git"
   },
   "scripts": {
-      "start": "node app.js"
+    "start": "node app.js"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4"
   }
 }
