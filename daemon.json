@@ -1,5 +1,5 @@
 {
-    "name": "demo",
+    "name": "express",
     "script": "app.js",
     "exec_mode": "cluster",
     "instances": 0,
