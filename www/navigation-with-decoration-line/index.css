@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    margin: 10px auto;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+
+.nav-item:hover ~ .nav-item::before {
+    left: 0;
+}
