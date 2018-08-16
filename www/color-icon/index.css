@@ -1,0 +1,11 @@
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-compass {
+  fill: #f69;
+  --circle: red;
+  --diamond: green;
+  --line: blue;
+}
